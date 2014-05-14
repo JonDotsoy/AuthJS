@@ -1,0 +1,37 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title Web Resource Login
+		link(rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css")
+		link(rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css")
+		script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
+		style.
+			@media (min-width: 400px){
+				.container{width: 400px;
+				}
+			}
+	body
+		header.text-center
+			h1 Registrate ahora
+		div.container
+			if msj.warning
+				div.alert.alert-warning #{msj.warning}
+			if msj.danger
+				div.alert.alert-danger #{msj.danger}
+			div.well
+				form(method="post" role="form")
+					div.form-group
+						label(for="inUser") Usuario
+						input#inUser.form-control(name="user" type="text")
+					div.form-group
+						label(for="inEmail") Email
+						input#inEmail.form-control(name="email" type="email")
+					div.form-group
+						label(for="inPass") Contraseña
+						input#inPass.form-control(name="pass" type="password")
+					input.btn.btn-primary.btn-block(type="submit" name="regis" value="Registrarme")
+			p.text-center
+				a(href="#{link.login}") Inicia sesión ahora.
+		hr
+		footer.text-center Procesado con Auth.1 de <a href="http://jonad.in/">jonad.in</a> @ 2014.
