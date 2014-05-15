@@ -1,0 +1,22 @@
+{
+	"name": "AuthJS",
+	"description": "Es un módulo para proyectos en Node.js que permite definir ciertas URL que requieren de un usuario y contraseña. También ayuda a gestionar sesiones de los usuarios.",
+	"version": "0.1.3",
+	"author": {
+		"name": "Jonathan Delgado Zamorano",
+		"email": "jonad.correo@gmail.com"
+	},
+	"dependencies": {
+		"express": ">=4.2.0",
+		"jade": ">=1.3.1",
+		"monk": ">=0.9.0",
+		"cookie-parser":">=1.0.1",
+		"body-parser":">=1.1.2"
+	},
+	"readmeFilename": "README.md",
+	"repository": {
+		"type": "git",
+		"url":"git://github.com/alfa30/AuthJS"
+	},
+	"homepage" : "https://github.com/alfa30/AuthJS"
+}
